@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flowerland</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tasks.html">Tasks</a></li>
+    <li><a href="forms.html">Buy Flowers</a></li>
+    <li><a href="shopping.html">Shopping</a></li>
+    <li><a href="http://tendancechieuse.com/">Tendance Chieuse</a></li>
+
+</ul>
+
+<form onsubmit="return false">
+    <div>
+        <input type="checkbox" id="checkbox1" name="important"><label>Is important</label>
+        <br>
+        <input type="checkbox" id="checkbox2" name="groceries"><label>Can be brought in groceries</label>
+
+
+        <p>Something more :</p>
+        <input id="testform" type="text">
+        <button onclick="addItem()">Add</button>
+        <ul id="itemlist">
+        </ul>
+        <input id="removeitem" type="number">
+        <button onclick="removeItem()">Remove</button>
+    </div>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
